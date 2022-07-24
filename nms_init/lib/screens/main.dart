@@ -9,8 +9,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(children: [Text("Hello")]),
+    return MaterialApp(
+      title: "Test",
+      home: SafeArea(
+        child: Scaffold(
+          body: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Center(child: Text("Test"))]),
+        ),
+      ),
     );
   }
 }
